@@ -12,7 +12,7 @@ function obtenerUsuarioDB(id) {
 }
 
 
-function actualizarPuntosUsuario(idUsuario, puntosExtra) {
+async function actualizarPuntosUsuario(idUsuario, puntosExtra) {
     try {
         
         const usuario = await obtenerUsuarioDB(idUsuario);
